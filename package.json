@@ -4,7 +4,7 @@
 	"description": "Problem Matcher Jasmine Tests",
 	"icon": "images/icon.png",
 	"version": "1.0.0",
-	"publisher": "Sean Sobey",
+	"publisher": "seansobey",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/SeanSobey/JasmineProblemMatcher.git"
@@ -16,35 +16,37 @@
 		"Languages"
 	],
 	"contributes": {
-		"problemMatchers": [{
-			"name": "jasmine",
-			"owner": "jasmine",
-			"severity": "error",
-			"fileLocation": [
-				"absolute"
-			],
-			"pattern": [
-				{
-					"regexp": "\\d+\\)\\s(.+)"
-				},
-				{
-					"regexp": "\\s+Message:"
-				},
-				{
-					"regexp": "\\s+(.*)",
-					"message": 1
-				},
-				{
-					"regexp": "\\s+Stack:"
-				},
-				{
-					"regexp": "[^\\(]*\\((.*):(\\d+):(\\d+)\\)",
-					"file": 1,
-					"line": 2,
-					"column": 3
-				}
-			]
-		}]
+		"problemMatchers": [
+			{
+				"name": "jasmine",
+				"owner": "jasmine",
+				"severity": "error",
+				"fileLocation": [
+					"absolute"
+				],
+				"pattern": [
+					{
+						"regexp": "\\d+\\)\\s(.+)"
+					},
+					{
+						"regexp": "\\s+Message:"
+					},
+					{
+						"regexp": "\\s+(.*)",
+						"message": 1
+					},
+					{
+						"regexp": "\\s+Stack:"
+					},
+					{
+						"regexp": "[^\\(]*\\((.*):(\\d+):(\\d+)\\)",
+						"file": 1,
+						"line": 2,
+						"column": 3
+					}
+				]
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "",
@@ -52,6 +54,7 @@
 		"postinstall": "node ./node_modules/vscode/bin/install"
 	},
 	"devDependencies": {
-		"vscode": "^1.15.0"
+		"vscode": "^1.15.0",
+		"vsce": "^1.30.0"
 	}
 }

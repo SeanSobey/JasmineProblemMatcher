@@ -2,6 +2,10 @@
 
 A problem matcher to show [Jasmine](https://jasmine.github.io/) spec errors when running tests in the terminal.
 
+## Preview:
+
+![preview](./images/preview.png)
+
 ## Usage
 
 You can enable this problem matcher by using its name "$jasmine".

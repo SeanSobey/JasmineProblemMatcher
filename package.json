@@ -1,7 +1,7 @@
 {
 	"name": "jasmine-problem-matcher",
 	"displayName": "Jasmine Problem Matcher",
-	"description": "Problem Matcher Jasmine Tests",
+	"description": "A problem matcher to show Jasmine spec errors when running tests in the terminal.",
 	"icon": "images/icon.png",
 	"version": "1.0.0",
 	"publisher": "seansobey",

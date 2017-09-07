@@ -2,6 +2,7 @@
 	"name": "jasmine-problem-matcher",
 	"displayName": "Jasmine Problem Matcher",
 	"description": "Problem Matcher Jasmine Tests",
+	"icon": "images/icon.png",
 	"version": "1.0.0",
 	"publisher": "Sean Sobey",
 	"repository": {

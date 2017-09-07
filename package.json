@@ -1,0 +1,28 @@
+{
+	"name": "jasmine-problem-matcher",
+	"displayName": "Jasmine Problem Matcher",
+	"description": "Problem Matcher Jasmine Tests",
+	"version": "1.0.0",
+	"publisher": "Sean Sobey",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SeanSobey/JasmineProblemMatcher.git"
+	},
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"problemMatchers": []
+	},
+	"scripts": {
+		"vscode:prepublish": "",
+		"compile": "",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"vscode": "^1.15.0"
+	}
+}

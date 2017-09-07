@@ -15,7 +15,37 @@
 		"Languages"
 	],
 	"contributes": {
-		"problemMatchers": []
+		"problemMatchers": [{
+			"name": "$jasmine",
+			"owner": "jasmine",
+			"severity": "error",
+			"fileLocation": [
+				"absolute"
+			],
+			"pattern": [{
+					"regexp": "^\\d+\\)\\s(.+)$"
+				},
+				{
+					"regexp": "^\\s+Message:$"
+				},
+				{
+					"regexp": "^\\s+(.*)$",
+					"message": 1
+				},
+				{
+					"regexp": "^\\s+Stack:$"
+				},
+				{
+					"regexp": "\\s+(.*)"
+				},
+				{
+					"regexp": "[^\\(]*\\((.*):(\\d+):(\\d+)$",
+					"file": 1,
+					"line": 2,
+					"column": 3
+				}
+			]
+		}]
 	},
 	"scripts": {
 		"vscode:prepublish": "",

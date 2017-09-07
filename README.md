@@ -4,7 +4,7 @@ A problem matcher to show [Jasmine](https://jasmine.github.io/) spec errors when
 
 ## Usage
 
-You can enable this problem matcher by using its name "$jasmine-spec".
+You can enable this problem matcher by using its name "$jasmine".
 
 The following example shows how to add problem matchers to your project:
 
@@ -18,7 +18,7 @@ The following example shows how to add problem matchers to your project:
 			"command": "jasmine",
 			"group": "test",
 			"args": [],
-			"problemMatcher": "$jasmine-spec"
+			"problemMatcher": "$jasmine"
 		}
 	]
 }

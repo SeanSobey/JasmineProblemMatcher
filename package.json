@@ -16,30 +16,28 @@
 	],
 	"contributes": {
 		"problemMatchers": [{
-			"name": "$jasmine",
+			"name": "jasmine",
 			"owner": "jasmine",
 			"severity": "error",
 			"fileLocation": [
 				"absolute"
 			],
-			"pattern": [{
-					"regexp": "^\\d+\\)\\s(.+)$"
+			"pattern": [
+				{
+					"regexp": "\\d+\\)\\s(.+)"
 				},
 				{
-					"regexp": "^\\s+Message:$"
+					"regexp": "\\s+Message:"
 				},
 				{
-					"regexp": "^\\s+(.*)$",
+					"regexp": "\\s+(.*)",
 					"message": 1
 				},
 				{
-					"regexp": "^\\s+Stack:$"
+					"regexp": "\\s+Stack:"
 				},
 				{
-					"regexp": "\\s+(.*)"
-				},
-				{
-					"regexp": "[^\\(]*\\((.*):(\\d+):(\\d+)$",
+					"regexp": "[^\\(]*\\((.*):(\\d+):(\\d+)\\)",
 					"file": 1,
 					"line": 2,
 					"column": 3

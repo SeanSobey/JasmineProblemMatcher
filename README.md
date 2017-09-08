@@ -1,5 +1,8 @@
 # Jasmine Problem Matcher
 
+[![issues](https://img.shields.io/github/issues/SeanSobey/JasmineProblemMatcher.svg)](https://github.com/SeanSobey/JasmineProblemMatcher/issues)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SeanSobey/JasmineProblemMatcher/blob/master/LICENSE)
+
 A problem matcher to show [Jasmine](https://jasmine.github.io/) spec errors when running tests in the terminal.
 
 ## Preview

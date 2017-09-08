@@ -2,7 +2,7 @@
 
 A problem matcher to show [Jasmine](https://jasmine.github.io/) spec errors when running tests in the terminal.
 
-## Preview:
+## Preview
 
 ![preview](./images/preview.png)
 

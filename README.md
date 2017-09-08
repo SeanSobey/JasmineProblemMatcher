@@ -30,3 +30,5 @@ The following example shows how to add problem matchers to your project:
 	]
 }
 ```
+
+Note: If you are using Typescript you can use [jasmine-ts-console-reporter](https://www.npmjs.com/package/jasmine-ts-console-reporter) to remap the matched error file to your typescript source.

@@ -3,7 +3,7 @@
 	"displayName": "Jasmine Problem Matcher",
 	"description": "A problem matcher to show Jasmine spec errors when running tests in the terminal.",
 	"icon": "images/icon.png",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"publisher": "seansobey",
 	"repository": {
 		"type": "git",
@@ -26,7 +26,7 @@
 				],
 				"pattern": [
 					{
-						"regexp": "\\d+\\)\\s(.+)"
+						"regexp": "\\d+\\)\\s.+"
 					},
 					{
 						"regexp": "\\s+Message:"

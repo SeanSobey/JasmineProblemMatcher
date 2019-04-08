@@ -1,60 +1,66 @@
 {
-	"name": "jasmine-problem-matcher",
-	"displayName": "Jasmine Problem Matcher",
-	"description": "A problem matcher to show Jasmine spec errors when running tests in the terminal.",
-	"icon": "images/icon.png",
-	"version": "1.0.2",
-	"publisher": "seansobey",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/SeanSobey/JasmineProblemMatcher.git"
-	},
-	"engines": {
-		"vscode": "^1.15.0"
-	},
-	"categories": [
-		"Languages"
-	],
-	"contributes": {
-		"problemMatchers": [
-			{
-				"name": "jasmine",
-				"owner": "jasmine",
-				"severity": "error",
-				"fileLocation": [
-					"absolute"
-				],
-				"pattern": [
-					{
-						"regexp": "\\d+\\)\\s.+"
-					},
-					{
-						"regexp": "\\s+Message:"
-					},
-					{
-						"regexp": "\\s+(.*)",
-						"message": 1
-					},
-					{
-						"regexp": "\\s+Stack:"
-					},
-					{
-						"regexp": "[^\\(]*\\((.*):(\\d+):(\\d+)\\)",
-						"file": 1,
-						"line": 2,
-						"column": 3
-					}
-				]
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "",
-		"compile": "",
-		"postinstall": "node ./node_modules/vscode/bin/install"
-	},
-	"devDependencies": {
-		"vscode": "^1.15.0",
-		"vsce": "^1.30.0"
-	}
+  "name": "jasmine-problem-matcher",
+  "displayName": "Jasmine Problem Matcher",
+  "description": "A problem matcher to show Jasmine spec errors when running tests in the terminal.",
+  "icon": "images/icon.png",
+  "version": "1.0.2",
+  "publisher": "seansobey",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SeanSobey/JasmineProblemMatcher.git"
+  },
+  "engines": {
+    "vscode": "^1.15.0"
+  },
+  "scripts": {
+    "vscode:prepublish": "",
+    "compile": "",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "vsce": "^1.59.0",
+    "vscode": "^1.15.0"
+  },
+  "author": "Sean Sobey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SeanSobey/MochaProblemMatcher/issues"
+  },
+  "homepage": "https://github.com/SeanSobey/MochaProblemMatcher#readme",
+  "categories": [
+    "Languages"
+  ],
+  "contributes": {
+    "problemMatchers": [
+      {
+        "name": "jasmine",
+        "owner": "jasmine",
+        "severity": "error",
+        "fileLocation": [
+          "absolute"
+        ],
+        "pattern": [
+          {
+            "regexp": "\\d+\\)\\s.+"
+          },
+          {
+            "regexp": "\\s+Message:"
+          },
+          {
+            "regexp": "\\s+(.*)",
+            "message": 1
+          },
+          {
+            "regexp": "\\s+Stack:"
+          },
+          {
+            "regexp": "[^\\(]*\\((.*):(\\d+):(\\d+)\\)",
+            "file": 1,
+            "line": 2,
+            "column": 3
+          }
+        ]
+      }
+    ]
+  }
 }
